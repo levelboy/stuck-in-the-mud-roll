@@ -1,0 +1,165 @@
+Inspecting 4 files
+CC.C
+
+Offenses:
+
+Guardfile:27:1: C: Block has too many lines. [27/25]
+guard :rspec, cmd: 'bundle exec rspec' do ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+stuck_in_the_mud_roll.rb:1:1: C: Missing top-level class documentation comment.
+class StuckInTheMudRoll
+^^^^^
+stuck_in_the_mud_roll.rb:10:3: C: Assignment Branch Condition size for score is too high. [17.92/15]
+  def score
+  ^^^
+stuck_in_the_mud_roll.rb:10:3: C: Cyclomatic complexity for score is too high. [11/6]
+  def score
+  ^^^
+stuck_in_the_mud_roll.rb:10:3: C: Perceived complexity for score is too high. [11/7]
+  def score
+  ^^^
+stuck_in_the_mud_roll.rb:20:3: C: Cyclomatic complexity for end_of_turn? is too high. [11/6]
+  def end_of_turn?
+  ^^^
+stuck_in_the_mud_roll.rb:20:3: C: Perceived complexity for end_of_turn? is too high. [11/7]
+  def end_of_turn?
+  ^^^
+stuck_in_the_mud_roll.rb:33:7: C: Avoid comparing a variable with multiple items in a conditional, use Array#include? instead.
+      total_dice -= 1 if d == 2 || d == 5
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+spec/stuck_in_the_mud_roll_spec.rb:4:1: C: Block has too many lines. [38/25]
+RSpec.describe StuckInTheMudRoll do ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+4 files inspected, 9 offenses detected
+]2;[RuboCop results] 4 files inspected, 9 offenses detected
+[0G[0m[0K[1] guard(main)>                                                                                                                      [18G[0m[0K[1] guard(main)>                                                                                                                      [18G.....F..
+
+Failures:
+
+  1) StuckInTheMudRoll#score with 2,2,2,5,5 should eq 0
+     Failure/Error: it { is_expected.to eq 0 }
+
+       expected: 0
+            got: 3
+
+       (compared using ==)
+     # ./spec/stuck_in_the_mud_roll_spec.rb:41:in `block (4 levels) in <top (required)>'
+
+Finished in 0.01206 seconds (files took 0.06762 seconds to load)
+8 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/stuck_in_the_mud_roll_spec.rb:41 # StuckInTheMudRoll#score with 2,2,2,5,5 should eq 0
+
+]2;[RSpec results] 8 examples, 1 failures in 0.0121 seconds
+Inspecting 3 files
+CCC
+
+Offenses:
+
+spec/stuck_in_the_mud_roll_spec.rb:4:1: C: Block has too many lines. [38/25]
+RSpec.describe StuckInTheMudRoll do ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Guardfile:27:1: C: Block has too many lines. [27/25]
+guard :rspec, cmd: 'bundle exec rspec' do ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+stuck_in_the_mud_roll.rb:1:1: C: Missing top-level class documentation comment.
+class StuckInTheMudRoll
+^^^^^
+stuck_in_the_mud_roll.rb:10:3: C: Assignment Branch Condition size for score is too high. [17.92/15]
+  def score
+  ^^^
+stuck_in_the_mud_roll.rb:10:3: C: Cyclomatic complexity for score is too high. [11/6]
+  def score
+  ^^^
+stuck_in_the_mud_roll.rb:10:3: C: Perceived complexity for score is too high. [11/7]
+  def score
+  ^^^
+stuck_in_the_mud_roll.rb:20:3: C: Cyclomatic complexity for end_of_turn? is too high. [11/6]
+  def end_of_turn?
+  ^^^
+stuck_in_the_mud_roll.rb:20:3: C: Perceived complexity for end_of_turn? is too high. [11/7]
+  def end_of_turn?
+  ^^^
+stuck_in_the_mud_roll.rb:33:7: C: Avoid comparing a variable with multiple items in a conditional, use Array#include? instead.
+      total_dice -= 1 if d == 2 || d == 5
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+3 files inspected, 9 offenses detected
+]2;[RuboCop results] 3 files inspected, 9 offenses detected
+[0G[0m[0K[1] guard(main)>                                                                                                                      [18G[0m[0K[1] guard(main)>                                                                                                                      [18G........
+
+Finished in 0.00263 seconds (files took 0.07242 seconds to load)
+8 examples, 0 failures
+
+]2;[RSpec results] 8 examples, 0 failures in 0.0026 seconds
+Inspecting 3 files
+CCC
+
+Offenses:
+
+spec/stuck_in_the_mud_roll_spec.rb:4:1: C: Block has too many lines. [38/25]
+RSpec.describe StuckInTheMudRoll do ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Guardfile:27:1: C: Block has too many lines. [27/25]
+guard :rspec, cmd: 'bundle exec rspec' do ...
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+stuck_in_the_mud_roll.rb:1:1: C: Missing top-level class documentation comment.
+class StuckInTheMudRoll
+^^^^^
+stuck_in_the_mud_roll.rb:10:3: C: Assignment Branch Condition size for score is too high. [17.92/15]
+  def score
+  ^^^
+stuck_in_the_mud_roll.rb:10:3: C: Cyclomatic complexity for score is too high. [11/6]
+  def score
+  ^^^
+stuck_in_the_mud_roll.rb:10:3: C: Perceived complexity for score is too high. [11/7]
+  def score
+  ^^^
+stuck_in_the_mud_roll.rb:20:3: C: Cyclomatic complexity for end_of_turn? is too high. [11/6]
+  def end_of_turn?
+  ^^^
+stuck_in_the_mud_roll.rb:20:3: C: Perceived complexity for end_of_turn? is too high. [11/7]
+  def end_of_turn?
+  ^^^
+stuck_in_the_mud_roll.rb:33:7: C: Avoid comparing a variable with multiple items in a conditional, use Array#include? instead.
+      total_dice -= 1 if d == 2 || d == 5
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+3 files inspected, 9 offenses detected
+]2;[RuboCop results] 3 files inspected, 9 offenses detected
+[0G[0m[0K[1] guard(main)>                                                                                                                      [18G[0m[0K[1] guard(main)>                                                                                                                      [18G]2;
+[0G[0m[0K[1] guard(main)>                                                                                                                      [18G[0m[0K[1] guard(main)>                                                                                                                      [18G]2;
+[0G[0m[0K[1] guard(main)>                                                                                                                      [18G[0m[0K[1] guard(main)>                                                                                                                      [18G.....F..
+
+Failures:
+
+  1) StuckInTheMudRoll#score with 2,2,2,5,5 should eq 0
+     Failure/Error: it { is_expected.to eq 0 }
+
+       expected: 0
+            got: 3
+
+       (compared using ==)
+     # ./spec/stuck_in_the_mud_roll_spec.rb:41:in `block (4 levels) in <top (required)>'
+
+Finished in 0.01161 seconds (files took 0.07109 seconds to load)
+8 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/stuck_in_the_mud_roll_spec.rb:41 # StuckInTheMudRoll#score with 2,2,2,5,5 should eq 0
+
+]2;[RSpec results] 8 examples, 1 failures in 0.0116 seconds
+[0G[0m[0K[1] guard(main)>                                                                                                                      [18G[0m[0K[1] guard(main)>                                                                                                                      [18G........
+
+Finished in 0.00265 seconds (files took 0.06876 seconds to load)
+8 examples, 0 failures
+
+]2;[RSpec results] 8 examples, 0 failures in 0.0026 seconds
+[0G[0m[0K[1] guard(main)>                                                                                                                      [18G[0m[0K[1] guard(main)>                                                                                                                      [18G
+[0m[0K[1] guard(main)>                                                                                                                      [18G[0m[0K[1] guard(main)>                                                                                                                      [18G
+[0m[0K[1] guard(main)>                                                                                                                      [18G[0m[0K[1] guard(main)>                                                                                                                      [18G
+[0m[0K[1] guard(main)>                                                                                                                      [18G[0m[0K[1] guard(main)>                                                                                                                      [18G]2;
